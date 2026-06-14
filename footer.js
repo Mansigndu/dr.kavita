@@ -89,17 +89,37 @@ footer.innerHTML = `
 
                 <ul class="space-y-3 text-white/80">
 
-                    <li>Kidney Disease Management</li>
+    <li>
+        <a href="kidney-disease-management.html" class="hover:text-white transition">
+            Kidney Disease Management
+        </a>
+    </li>
 
-                    <li>Blood Pressure Management</li>
+    <li>
+        <a href="blood-pressure-management.html" class="hover:text-white transition">
+            Blood Pressure Management
+        </a>
+    </li>
 
-                    <li>Dialysis Consultation</li>
+    <li>
+        <a href="dialysis-consultation.html" class="hover:text-white transition">
+            Dialysis Consultation
+        </a>
+    </li>
 
-                    <li>Kidney Transplant Care</li>
+    <li>
+        <a href="kidney-transplant-care.html" class="hover:text-white transition">
+            Kidney Transplant Care
+        </a>
+    </li>
 
-                    <li>Preventive Kidney Health</li>
+    <li>
+        <a href="preventive-kidney-health.html" class="hover:text-white transition">
+            Preventive Kidney Health
+        </a>
+    </li>
 
-                </ul>
+</ul>
 
             </div>
 
