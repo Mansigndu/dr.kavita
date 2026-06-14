@@ -200,39 +200,32 @@ Mon - Sat
         <div class="grid lg:grid-cols-12 gap-10">
 
             <!-- FORM -->
+            <div class="lg:col-span-7" data-aos="fade-right">
 
-            <div
-                class="lg:col-span-7"
-                data-aos="fade-right">
+                <div class="bg-white rounded-[35px] p-8 lg:p-12 shadow-xl">
 
-                <div
-                    class="bg-white rounded-[35px] p-8 lg:p-12 shadow-xl">
-
-                    <span
-                        class="uppercase tracking-[4px] text-[#B12A2A] font-semibold">
-
+                    <span class="uppercase tracking-[4px] text-[#B12A2A] font-semibold">
                         Appointment Request
-
                     </span>
 
-                    <h2
-                        class="mt-4 text-4xl font-bold text-slate-900">
-
+                    <h2 class="mt-4 text-4xl font-bold text-slate-900">
                         Book A Consultation
-
                     </h2>
 
-                    <form class="mt-10 space-y-6">
+                    <!-- SIMPLE REDIRECT FORM -->
+                    <form id="whatsappBookingForm" action="/form/appointment-form" method="GET" class="mt-10 space-y-6">
 
                         <div class="grid md:grid-cols-2 gap-6">
 
                             <input
                                 type="text"
+                                name="full_name"
                                 placeholder="Full Name"
                                 class="w-full px-5 py-4 border border-slate-200 rounded-2xl focus:outline-none focus:border-[#1E5A88]">
 
                             <input
                                 type="tel"
+                                name="phone"
                                 placeholder="Phone Number"
                                 class="w-full px-5 py-4 border border-slate-200 rounded-2xl focus:outline-none focus:border-[#1E5A88]">
 
@@ -242,35 +235,33 @@ Mon - Sat
 
                             <input
                                 type="email"
+                                name="email"
                                 placeholder="Email Address"
                                 class="w-full px-5 py-4 border border-slate-200 rounded-2xl focus:outline-none focus:border-[#1E5A88]">
 
                             <input
                                 type="date"
+                                name="date"
                                 class="w-full px-5 py-4 border border-slate-200 rounded-2xl focus:outline-none focus:border-[#1E5A88]">
 
                         </div>
 
                         <select
+                            name="concern"
                             class="w-full px-5 py-4 border border-slate-200 rounded-2xl focus:outline-none focus:border-[#1E5A88]">
 
-                            <option>Select Concern</option>
-
-                            <option>Chronic Kidney Disease</option>
-
-                            <option>Hypertension</option>
-
-                            <option>Acute Kidney Injury</option>
-
-                            <option>Dialysis Consultation</option>
-
-                            <option>Kidney Transplant Follow-up</option>
-
-                            <option>Second Opinion</option>
+                            <option value="">Select Concern</option>
+                            <option value="CKD">Chronic Kidney Disease</option>
+                            <option value="Hypertension">Hypertension</option>
+                            <option value="AKI">Acute Kidney Injury</option>
+                            <option value="Dialysis">Dialysis Consultation</option>
+                            <option value="Transplant">Kidney Transplant Follow-up</option>
+                            <option value="Second Opinion">Second Opinion</option>
 
                         </select>
 
                         <textarea
+                            name="message"
                             rows="5"
                             placeholder="Describe Your Concern"
                             class="w-full px-5 py-4 border border-slate-200 rounded-2xl focus:outline-none focus:border-[#1E5A88]"></textarea>
@@ -290,77 +281,33 @@ Mon - Sat
             </div>
 
             <!-- RIGHT SIDE -->
+            <div class="lg:col-span-5" data-aos="fade-left">
 
-            <div
-                class="lg:col-span-5"
-                data-aos="fade-left">
+                <div class="bg-[#1E5A88] text-white rounded-[35px] p-8 lg:p-10 h-full">
 
-                <div
-                    class="bg-[#1E5A88] text-white rounded-[35px] p-8 lg:p-10 h-full">
-
-                    <span
-                        class="uppercase tracking-[4px] text-white/70 font-semibold">
-
+                    <span class="uppercase tracking-[4px] text-white/70 font-semibold">
                         Clinic Information
-
                     </span>
 
-                    <h2
-                        class="mt-4 text-3xl font-bold">
-
-                        Kaizen Kidney &
-                        BP Clinic
-
+                    <h2 class="mt-4 text-3xl font-bold">
+                        Kaizen Kidney & BP Clinic
                     </h2>
 
                     <div class="mt-10 space-y-8">
 
                         <div>
-
-                            <h3 class="font-semibold text-xl">
-
-                                Phone
-
-                            </h3>
-
-                            <p class="mt-2 text-white/80">
-
-                                +91 9326609636
-
-                            </p>
-
+                            <h3 class="font-semibold text-xl">Phone</h3>
+                            <p class="mt-2 text-white/80">+91 9326609636</p>
                         </div>
 
                         <div>
-
-                            <h3 class="font-semibold text-xl">
-
-                                Email
-
-                            </h3>
-
-                            <p class="mt-2 text-white/80">
-
-                                kaizenkidneyclinic@gmail.com
-
-                            </p>
-
+                            <h3 class="font-semibold text-xl">Email</h3>
+                            <p class="mt-2 text-white/80">kaizenkidneyclinic@gmail.com</p>
                         </div>
 
                         <div>
-
-                            <h3 class="font-semibold text-xl">
-
-                                Address
-
-                            </h3>
-
-                            <p class="mt-2 text-white/80">
-
-                                Mumbai, Maharashtra
-
-                            </p>
-
+                            <h3 class="font-semibold text-xl">Address</h3>
+                            <p class="mt-2 text-white/80">Mumbai, Maharashtra</p>
                         </div>
 
                     </div>
