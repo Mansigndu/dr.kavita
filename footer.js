@@ -87,7 +87,7 @@ footer.innerHTML = `
                     Services
                 </h3>
 
-                <ul class="space-y-3 text-white/80">
+               <ul class="space-y-3 text-white/80">
 
     <li>
         <a href="kidney-disease-management.html" class="hover:text-white transition">
@@ -98,6 +98,13 @@ footer.innerHTML = `
     <li>
         <a href="blood-pressure-management.html" class="hover:text-white transition">
             Blood Pressure Management
+        </a>
+    </li>
+
+    <!-- NEW PAGE 1 -->
+    <li>
+        <a href="diabetes-kidney-disease.html" class="hover:text-white transition">
+            Diabetes & Kidney Disease
         </a>
     </li>
 
@@ -113,14 +120,9 @@ footer.innerHTML = `
         </a>
     </li>
 
-    <li>
-        <a href="preventive-kidney-health.html" class="hover:text-white transition">
-            Preventive Kidney Health
-        </a>
-    </li>
+   
 
 </ul>
-
             </div>
 
             <!-- Contact -->

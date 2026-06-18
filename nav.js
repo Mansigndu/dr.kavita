@@ -46,7 +46,7 @@ nav.innerHTML = `
 
         <a href="conditions.html"
             class="nav-link text-[#1E5A88] hover:text-[#B12A2A] transition duration-300">
-            Conditions
+           What We Treat
         </a>
 
         <a href="contact.html"
@@ -144,7 +144,7 @@ nav.innerHTML = `
 
         <a href="conditions.html"
             class="py-4 border-b border-slate-100">
-            Conditions
+            What We Treat
         </a>
 
         <a href="contact.html"
