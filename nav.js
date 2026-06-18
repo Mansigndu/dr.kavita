@@ -19,7 +19,7 @@ nav.innerHTML = `
     <a href="index.html" class="flex items-center">
 
         <img
-            src="./images/logo.jpeg"
+            src="https://ik.imagekit.io/5f5fo2fhm/dr.kavitalogo.jpeg"
             alt="Kaizen Kidney Clinic"
             class="h-16 md:h-20 w-auto">
 

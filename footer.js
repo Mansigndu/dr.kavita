@@ -18,7 +18,7 @@ footer.innerHTML = `
             <div>
 
                 <img
-                    src="./images/logo.jpeg"
+                    src="https://ik.imagekit.io/5f5fo2fhm/dr.kavitalogo.jpeg"
                     alt="Kaizen Kidney Clinic"
                     class="h-20 bg-white p-2 rounded-xl">
 
