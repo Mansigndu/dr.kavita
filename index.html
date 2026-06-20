@@ -912,6 +912,90 @@
     </div>
 
 </section>
+<!-- Hospital Affiliations -->
+<section class="py-24 bg-[#F8FBFD] overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Heading -->
+        <div class="text-center mb-16" data-aos="fade-up">
+
+            <span class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#EAF6FC] text-[#1E5A88] font-semibold">
+                <i class="fa-solid fa-hospital"></i>
+                Hospital Affiliations
+            </span>
+
+            <h2 class="mt-6 text-4xl md:text-5xl font-bold text-[#1E5A88]">
+                Associated Hospitals
+            </h2>
+
+            <p class="max-w-3xl mx-auto mt-6 text-gray-600 text-lg">
+                Dr. Kavita Vishwakarma is affiliated with leading hospitals across Mumbai.
+            </p>
+
+        </div>
+
+        <!-- Visible Hospitals -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div class="bg-white p-6 rounded-[25px] shadow-lg">
+                <h3 class="font-semibold text-[#1E5A88]">Bhaktivedanta Hospital</h3>
+            </div>
+
+            <div class="bg-white p-6 rounded-[25px] shadow-lg">
+                <h3 class="font-semibold text-[#1E5A88]">Criticare Asia Hospital</h3>
+            </div>
+
+            <div class="bg-white p-6 rounded-[25px] shadow-lg">
+                <h3 class="font-semibold text-[#1E5A88]">Oscar Hospital</h3>
+            </div>
+
+            <div class="bg-white p-6 rounded-[25px] shadow-lg">
+                <h3 class="font-semibold text-[#1E5A88]">Infinity Multispeciality Hospital</h3>
+            </div>
+
+        </div>
+
+        <!-- Hidden Hospitals -->
+        <div id="hospitalList" class="hidden mt-6">
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-white p-6 rounded-[25px] shadow-lg">Mallika Hospital</div>
+
+                <div class="bg-white p-6 rounded-[25px] shadow-lg">Bluebell Hospital</div>
+
+                <div class="bg-white p-6 rounded-[25px] shadow-lg">SRK Life Care Hospital</div>
+
+                <div class="bg-white p-6 rounded-[25px] shadow-lg">Caspian Speciality Hospital</div>
+
+                <div class="bg-white p-6 rounded-[25px] shadow-lg">Sujay Hospital</div>
+
+                <div class="bg-white p-6 rounded-[25px] shadow-lg">BSES MG Hospital</div>
+                <div class="bg-white p-6 rounded-[25px] shadow-lg">
+    <h3 class="font-semibold text-[#1E5A88]">
+        Criticare Hospital
+    </h3>
+</div>
+
+            </div>
+
+        </div>
+
+        <!-- Button -->
+        <div class="text-center mt-10">
+
+            <button id="viewMoreBtn"
+                onclick="toggleHospitals()"
+                class="px-8 py-4 rounded-full bg-[#1E5A88] text-white font-semibold hover:scale-105 transition">
+                View All Affiliations
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
 <!-- WHY CHOOSE US -->
 
 <section class="py-24 bg-[#F8FBFD] overflow-hidden">
@@ -1646,6 +1730,20 @@
             .style.width = scrolled + "%";
     });
 
+</script>
+<script>
+function toggleHospitals() {
+    const hospitalList = document.getElementById("hospitalList");
+    const button = document.getElementById("viewMoreBtn");
+
+    hospitalList.classList.toggle("hidden");
+
+    if (hospitalList.classList.contains("hidden")) {
+        button.innerText = "View All Affiliations";
+    } else {
+        button.innerText = "Show Less";
+    }
+}
 </script>
 
 </body>
