@@ -173,7 +173,7 @@ footer.innerHTML = `
 
                 <!-- Social Icons -->
 <div class="flex gap-4 mt-6">
-    <a href="https://www.instagram.com/kaizenkidney_bpclinic?igsh=MTAzNGx5czYwcjhsOQ=="
+    <a href="https://www.instagram.com/askyournephrologist?igsh=MTJsMHNvNnAxcjluMw=="
         target="_blank"
         class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#56B4E9] transition">
 
