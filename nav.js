@@ -203,10 +203,10 @@ const currentPage = window.location.pathname.split("/").pop();
 
 document.querySelectorAll(".nav-link").forEach(link => {
     if (link.getAttribute("href") === currentPage) {
-        link.classList.add(
-            "text-[#B12A2A]",
-            "font-bold"
-        );
+        // link.classList.add(
+        //     "text-[#B12A2A]",
+        //     "font-bold"
+        // );
     }
 });
 
