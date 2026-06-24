@@ -175,10 +175,10 @@ footer.innerHTML = `
 <div class="flex gap-4 mt-6">
     <a href="https://www.instagram.com/askyournephrologist?igsh=MTJsMHNvNnAxcjluMw=="
         target="_blank"
-        class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#56B4E9] transition">
+        class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 hover:bg-[#56B4E9] transition">
 
-        <i class="fab fa-instagram"></i>
-        @askyournephrologist
+        <i class="fab fa-instagram text-lg"></i>
+        <span>@askyournephrologist</span>
 
     </a>
 </div>
