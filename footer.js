@@ -178,6 +178,7 @@ footer.innerHTML = `
         class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#56B4E9] transition">
 
         <i class="fab fa-instagram"></i>
+        @askyournephrologist
 
     </a>
 </div>
