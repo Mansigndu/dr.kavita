@@ -35,7 +35,7 @@ footer.innerHTML = `
             <div>
 
                 <h3 class="font-bold text-xl mb-6">
-                    Quick Links
+                    Quick links
                 </h3>
 
                 <ul class="space-y-3 text-white/80">
@@ -50,7 +50,7 @@ footer.innerHTML = `
                     <li>
                         <a href="about.html"
                             class="hover:text-white transition">
-                            About Us
+                            About us
                         </a>
                     </li>
 
@@ -91,32 +91,32 @@ footer.innerHTML = `
 
     <li>
         <a href="kidney-disease-management.html" class="hover:text-white transition">
-            Kidney Disease Management
+            Kidney disease management
         </a>
     </li>
 
     <li>
         <a href="blood-pressure-management.html" class="hover:text-white transition">
-            Blood Pressure Management
+            Blood pressure management
         </a>
     </li>
 
     <!-- NEW PAGE 1 -->
     <li>
         <a href="diabetes-kidney-disease.html" class="hover:text-white transition">
-            Diabetes & Kidney Disease
+            Diabetes & kidney disease
         </a>
     </li>
 
     <li>
         <a href="dialysis-consultation.html" class="hover:text-white transition">
-            Dialysis Consultation
+            Dialysis consultation
         </a>
     </li>
 
     <li>
         <a href="kidney-transplant-care.html" class="hover:text-white transition">
-            Kidney Transplant Care
+            Kidney transplant care
         </a>
     </li>
 
@@ -130,7 +130,7 @@ footer.innerHTML = `
             <div>
 
                 <h3 class="font-bold text-xl mb-6">
-                    Contact Us
+                    Contact us
                 </h3>
 
                 <div class="space-y-4 text-white/80">

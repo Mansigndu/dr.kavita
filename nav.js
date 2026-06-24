@@ -46,7 +46,7 @@ nav.innerHTML = `
 
         <a href="conditions.html"
             class="nav-link text-[#1E5A88] hover:text-[#B12A2A] transition duration-300">
-           What We Treat
+           What we treat
         </a>
 
         <a href="contact.html"
@@ -68,7 +68,7 @@ nav.innerHTML = `
             hover:text-white
             transition duration-300">
 
-            Call Now
+            Call now
 
         </a>
 
@@ -79,7 +79,7 @@ nav.innerHTML = `
             hover:scale-105
             transition duration-300">
 
-            Book Appointment
+            Book appointment
 
         </a>
 
@@ -156,7 +156,7 @@ nav.innerHTML = `
             class="mt-6 bg-[#B12A2A]
             text-white text-center py-3 rounded-full">
 
-            Book Appointment
+            Book appointment
 
         </a>
 
