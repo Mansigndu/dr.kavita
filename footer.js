@@ -11,8 +11,7 @@ footer.innerHTML = `
 
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-16 relative z-10">
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-
+       <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-10">
             <!-- Clinic Info -->
 
             <div>
@@ -67,6 +66,7 @@ footer.innerHTML = `
                             Conditions
                         </a>
                     </li>
+                
 
                     <li>
                         <a href="contact.html"
@@ -124,6 +124,37 @@ footer.innerHTML = `
 
 </ul>
             </div>
+            <!-- Patient Resources -->
+
+<div>
+
+    <h3 class="font-bold text-xl mb-6">
+        Resources
+    </h3>
+
+    <ul class="space-y-3 text-white/80">
+
+        <li>
+            <a href="faq.html" class="hover:text-white transition">
+                Frequently Asked Questions
+            </a>
+        </li>
+
+        <li>
+            <a href="patient-resources.html" class="hover:text-white transition">
+                Patient Resources
+            </a>
+        </li>
+
+        <li>
+            <a href="affiliations.html" class="hover:text-white transition">
+                Affiliations
+            </a>
+        </li>
+
+    </ul>
+
+</div>
 
             <!-- Contact -->
 
@@ -182,10 +213,13 @@ footer.innerHTML = `
 
     </a>
 </div>
+ 
 
             </div>
+            
 
         </div>
+       
 
         <!-- Bottom -->
 

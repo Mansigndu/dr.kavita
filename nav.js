@@ -29,32 +29,66 @@ nav.innerHTML = `
 
     <div class="hidden lg:flex items-center gap-8 font-medium">
 
-        <a href="index.html"
-            class="nav-link text-[#1E5A88] hover:text-[#B12A2A] transition duration-300">
-            Home
-        </a>
+    <a href="index.html"
+        class="nav-link text-[#1E5A88] hover:text-[#B12A2A] transition duration-300">
+        Home
+    </a>
 
-        <a href="about.html"
-            class="nav-link text-[#1E5A88] hover:text-[#B12A2A] transition duration-300">
-            About
-        </a>
+    <a href="about.html"
+        class="nav-link text-[#1E5A88] hover:text-[#B12A2A] transition duration-300">
+        About
+    </a>
 
-        <a href="services.html"
-            class="nav-link text-[#1E5A88] hover:text-[#B12A2A] transition duration-300">
-            Services
-        </a>
+    <a href="services.html"
+        class="nav-link text-[#1E5A88] hover:text-[#B12A2A] transition duration-300">
+        Services
+    </a>
 
-        <a href="conditions.html"
-            class="nav-link text-[#1E5A88] hover:text-[#B12A2A] transition duration-300">
-           What we treat
-        </a>
+    <a href="conditions.html"
+        class="nav-link text-[#1E5A88] hover:text-[#B12A2A] transition duration-300">
+        What We Treat
+    </a>
 
-        <a href="contact.html"
-            class="nav-link text-[#1E5A88] hover:text-[#B12A2A] transition duration-300">
-            Contact
-        </a>
+    <!-- Resources Dropdown -->
+    <div class="relative group">
+
+        <button
+            class="flex items-center gap-2 text-[#1E5A88] hover:text-[#B12A2A] transition duration-300">
+
+            Resources
+
+            <i class="fa-solid fa-chevron-down text-xs"></i>
+
+        </button>
+
+        <div
+            class="absolute left-0 mt-0 w-60 bg-white rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 py-3">
+
+            <a href="faq.html"
+                class="block px-6 py-3 hover:bg-[#F8FBFD] text-[#1E5A88]">
+                FAQ
+            </a>
+
+            <a href="patient-resources.html"
+                class="block px-6 py-3 hover:bg-[#F8FBFD] text-[#1E5A88]">
+                Patient Resources
+            </a>
+
+            <a href="affiliations.html"
+                class="block px-6 py-3 hover:bg-[#F8FBFD] text-[#1E5A88]">
+                Affiliations
+            </a>
+
+        </div>
 
     </div>
+
+    <a href="contact.html"
+        class="nav-link text-[#1E5A88] hover:text-[#B12A2A] transition duration-300">
+        Contact
+    </a>
+
+</div>
 
     
 
@@ -127,38 +161,69 @@ nav.innerHTML = `
 
     <div class="flex flex-col p-6 font-medium">
 
-        <a href="index.html"
-            class="py-4 border-b border-slate-100">
-            Home
+       <a href="index.html"
+    class="py-4 border-b border-slate-100">
+    Home
+</a>
+
+<a href="about.html"
+    class="py-4 border-b border-slate-100">
+    About
+</a>
+
+<a href="services.html"
+    class="py-4 border-b border-slate-100">
+    Services
+</a>
+
+<a href="conditions.html"
+    class="py-4 border-b border-slate-100">
+    What We Treat
+</a>
+
+<!-- Resources Dropdown -->
+<div class="border-b border-slate-100">
+
+    <button
+        id="resources-btn"
+        class="w-full py-4 flex items-center justify-between">
+
+        <span>Resources</span>
+
+        <i id="resources-icon"
+            class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i>
+
+    </button>
+
+    <div
+        id="resources-menu"
+        class="hidden pl-4 pb-4 flex flex-col gap-3 text-slate-600">
+
+        <a href="faq.html">
+            FAQ
         </a>
 
-        <a href="about.html"
-            class="py-4 border-b border-slate-100">
-            About
+        <a href="patient-resources.html">
+            Patient Resources
         </a>
 
-        <a href="services.html"
-            class="py-4 border-b border-slate-100">
-            Services
+        <a href="affiliations.html">
+            Affiliations
         </a>
 
-        <a href="conditions.html"
-            class="py-4 border-b border-slate-100">
-            What We Treat
-        </a>
+    </div>
 
-        <a href="contact.html"
-            class="py-4 border-b border-slate-100">
-            Contact
-        </a>
+</div>
 
-        <a href="contact.html"
-            class="mt-6 bg-[#B12A2A]
-            text-white text-center py-3 rounded-full">
+<a href="contact.html"
+    class="py-4 border-b border-slate-100">
+    Contact
+</a>
 
-            Book appointment
-
-        </a>
+<a href="contact.html"
+    class="mt-6 bg-[#B12A2A] text-white text-center py-3 rounded-full">
+    Book Appointment
+</a>
 
     </div>
 
@@ -245,5 +310,16 @@ window.addEventListener("resize", () => {
     if (window.innerWidth >= 1024) {
         closeMenu();
     }
+    
 
 });
+const resourcesBtn = document.getElementById("resources-btn");
+const resourcesMenu = document.getElementById("resources-menu");
+const resourcesIcon = document.getElementById("resources-icon");
+
+if (resourcesBtn) {
+    resourcesBtn.addEventListener("click", () => {
+        resourcesMenu.classList.toggle("hidden");
+        resourcesIcon.classList.toggle("rotate-180");
+    });
+}
